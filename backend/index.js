@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongooss.connect('mongodb://localhost:27017/form', { useNewUrlParser: true, useUnifiedTopology: true });
+mongooss.connect('mongodb+srv://Sagar:%40Sagar%400531@cluster0.jwxnkib.mongodb.net/form', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.get('/api/users', async (req, res) => {
     try {
